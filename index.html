@@ -162,14 +162,14 @@
 </head>
 <body>
   <div class="pedido">
-    <h1>Quer Sair comigo Rebequinha?</h1>
+    <h1>Quer Sair comigo Rebeca dengosa?</h1>
   </div>
   <div class="botoes">
     <button id="sim" class="botao">Sim</button>
     <button id="nao" class="botao">Não</button>
   </div>
   <div id="animacao" class="animacao">
-    <img src="images.jpeg" alt=""> <br>
+    <img src="./images.jpeg" alt=""> <br>
     Parabéns! Você aceitou Sair Comigo. 🎉
   </div>
 
@@ -230,6 +230,9 @@
       simButton.style.display = 'none';
       naoButton.style.display = 'none';
       animacaoDiv.style.display = 'block';
+      setTimeout(function(){
+                window.location.href = "https://www.youtube.com/watch?v=izGwDsrQ1eQ";
+            }, 3000);
       clearTimeout(timer);
     });
     
@@ -256,10 +259,6 @@
     // Cria corações ao clicar ou tocar na tela com diferentes estilos
     document.addEventListener('click', (e) => {
       criarCoracao(e.clientX, e.clientY);
-      setTimeout(function(){
-                window.location.href = "https://www.youtube.com/watch?v=izGwDsrQ1eQ";
-            }, 3000);
-
     });
 
     document.addEventListener('touchstart', (e) => {
